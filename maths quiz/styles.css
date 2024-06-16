@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* styling for header and footer below  */
+header, footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* quiz styling below  */
+#quiz-container, #result-container, #message-container {
+    text-align: center;
+}
+
+#question {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#choices button {
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+#skip-button, #continue-button, #restart-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+#timer {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+#progress {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}

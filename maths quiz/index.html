@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQUIZ</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <!-- header below  -->
+    <header>
+        <h1>MATHS QUIZ</h1>
+    </header>
+    <main>
+        <div id="quiz-container">
+            <div id="question">Question will appear here</div>
+            <div id="choices"></div>
+            <button id="skip-button" onclick="skipQuestion()">Skip Question</button>
+            <div id="timer">Time left: <span id="time">30</span> seconds</div>
+            <div id="progress">Correct Answers: <span id="correct-count">0</span> / <span id="total-questions">0</span></div>
+        </div>
+        <div id="result-container" style="display: none;">
+            <h2 id="result"></h2>
+            <button id="restart-button" onclick="restartQuiz()">Restart</button>
+            <!-- restart button above  -->
+        </div>
+        <div id="message-container" style="display: none;">
+            <h2 id="message"></h2>
+            <button id="continue-button" onclick="continueQuiz()">Continue</button>
+        </div>
+        <!-- continue button above  -->
+    </main>
+    <!-- footer content below  -->
+    <footer>
+        <p> © 2024 by fheems. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
